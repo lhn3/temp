@@ -1,0 +1,134 @@
+.sk{
+    position: absolute;
+    top: 40px;
+    left: 190px;
+    border-left: 1px solid #c81523;
+    padding: 3px 15px;
+}
+nav{
+    line-height: 47px;
+    text-align: center;
+}
+.sk_list{
+
+}
+.sk_list li{
+    float: left;
+    font-weight: bold;
+    font-size: 16px;
+}
+.sk_list li a{
+    padding: 0 30px;
+    color: #000;
+}
+.sk_con{
+
+}
+.sk_con li {
+    float: left;
+    font-size: 14px;
+}
+.sk_con li a{
+    padding:0 20px;
+}
+.sk_con li:last-child::after{
+    content: '\e91e';
+    font-family: 'icomoon';
+    margin-left: -10px;
+}
+
+.sk_container{
+    height: 1500px;
+}
+.sk_container .sk_hd{
+    height: 120px;
+}
+.sk_container .sk_hd ul{
+    overflow: hidden;
+}
+.sk_container .sk_hd li{
+    float:left;
+    height: 460px;
+    width: 290px;
+    margin-right: 13px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+.sk_container .sk_hd li:nth-child(4n){
+    margin-right: 0;
+}
+.sk_container .sk_hd li:hover{
+    border: 1px solid #c81623;
+}
+.sk_hd .sk_img{
+    text-align: center;
+}
+.sk_info{
+    padding: 10px 8px 8px ;
+}
+.sk_hd h4{
+    font-weight: normal;
+    font-size: 14px;
+}
+.sk_price{
+    margin:10px 0;
+}
+.sk_price span{
+    color: #c81623;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.sk_price em{
+    text-decoration: line-through;
+    font-weight: bold;
+    font-size: 14px;
+}
+.sk_num{
+    font-size: 14px;
+}
+.sk_num span{
+    display: inline-block;
+    float: left;
+    margin-bottom:10px;
+}
+.sk_num .total{
+    float: left;
+    height: 13px;
+    width: 130px;
+    margin: 5px 10px;
+    border-radius: 7.5px;
+    border: 1px solid #c81623;
+}
+.sk_num .to_total{
+    float: left;
+    height: 11px;
+    width: 66%;
+    border-radius: 7.5px 0 0 7.5px;
+    background-color: #c81623;
+}
+.sk_num em{
+    color: #c81623;
+}
+.sk_buy{
+    height: 43px;
+    background-color: #c81623;
+    line-height: 43px;
+}
+.sk_hd a{
+    font-size: 18px;
+    color: #ffffff;
+    padding-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+

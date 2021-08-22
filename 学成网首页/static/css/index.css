@@ -80,6 +80,7 @@ li {
     color: #bfbfbf;
     font-size: 14px;
     text-indent: 1.5em;
+    outline: none;
 }
 
 .search input:focus {
@@ -102,6 +103,9 @@ li {
     width: 105px;
     line-height: 42px;
     font-size: 14px;
+}
+.user img{
+    vertical-align: middle;
 }
 
 /*banner部分*/
@@ -136,7 +140,6 @@ li {
     color: #00a4ff;
 }
 .subnav span{
-    display: inline-block;
     float: right;
     color: #bfbfbf;
 }
@@ -237,7 +240,6 @@ li {
     font-size: 20px;
 }
 .box-hd a{
-    display: inline-block;
     float: right;
     margin-right: 30px;
     font-size: 12px;
@@ -254,9 +256,17 @@ li {
     background-color: #fff;
     margin-right: 15px;
     margin-bottom: 15px;
+    position: relative;
 }
 .box-bd li img{
     width: 100%;
+ }
+.box-bd li em img{
+    position: absolute;
+    height: 24px;
+    width: 40px;
+    top: 10px;
+    right: -4px;
  }
 .box-bd li p{
     color: #050505;
@@ -325,14 +335,3 @@ li {
 .footer .right a:hover{
     text-decoration:  underline;
 }
-
-
-
-
-
-
-
-
-
-
-
