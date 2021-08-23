@@ -1,0 +1,205 @@
+body{
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+	-webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: #a5a5a5;
+    box-sizing: border-box;
+}
+button{
+    /*取消端浏览器默认的外观*/
+	-webkit-appearance: none;
+}
+img,a{
+    /*禁用长按页面时的弹出菜单*/
+    -webkit-touch-callout: none;
+    /*去除图片顶部空白*/
+    vertical-align: top;
+}
+/*头部*/
+.app ul{
+    height: 45px;
+    background-color: #333333;
+}
+.app li{
+    float: left;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    color:#fff;
+}
+.app li:nth-child(1){
+    width: 8%;
+}
+.app li:nth-child(1) img{
+    vertical-align: middle;
+    width: 10px;
+}
+.app li:nth-child(2){
+    width: 10%;
+}
+.app li:nth-child(2) img{
+    vertical-align: middle;
+    width: 30px;
+}
+.app li:nth-child(3){
+    width: 57%;
+}
+.app li:nth-child(4){
+    width: 25%;
+    background-color: #F63515;
+}
+
+/*搜索*/
+.search{
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 44px;
+    min-width: 320px;
+    max-width: 640px;
+}
+.search div{
+    height: 44px;
+}
+.search-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    background-color: transparent;
+}
+.search-btn::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 18px;
+    background: url("../img/s-btn.png") no-repeat;
+    /*缩放*/
+    background-size: 20px 18px;
+    margin: 14px 0 0 15px;
+}
+.search .search-search{
+    height: 30px;
+    margin: 7px 50px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.search-search::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    background: url("../img/jd.png") no-repeat;
+    background-size: 20px 15px;
+    margin: 8px 0 0 15px;
+    padding-left: 5px;
+    border-right: 1px solid silver;
+}
+.search-search .sou{
+    position: absolute;
+    top: 15px;
+    left: 98px;
+    width: 18px;
+    height: 15px;
+    background: url("../img/jd-sprites.png") no-repeat -81px 0;
+    /*将精灵图缩放为原来的一半*/
+    background-size: 200px auto;
+    z-index: 1;
+}
+.search-search input{
+    position:absolute;
+    border: none;
+    margin:5px 0 5px 28px;
+}
+.search-login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    background-color: transparent;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+}
+
+/*轮播图位置*/
+.main{
+    width: 100%;
+}
+.main .swiper img{
+    width: 100%;
+}
+
+/*广告位置*/
+.brand{
+    width: 100%;
+}
+.brand div{
+    float: left;
+    width: 33.3333%;
+    margin: 0;
+}
+.brand div img{
+    width: 100%;
+}
+.brand div:nth-child(1) img{
+    border-radius: 20px 0 0 0;
+}
+.brand div:nth-child(3) img{
+    border-radius: 0 20px 0 0;
+}
+
+/*分类*/
+.nav a{
+    float: left;
+    width: 20%;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.nav span{
+    display: block;
+}
+.nav img{
+    width: 40px;
+}
+
+/*新闻*/
+.news a{
+    float: left;
+    width: 100%;
+}
+.news img{
+    width: 100%;
+}
+.news a:nth-child(1){
+    width: 50%;
+}
+
+.news a:nth-child(2){
+    width: 25%;
+    border-left: 1px solid #ccc;
+}
+.news a:nth-child(3){
+    width: 25%;
+    border-left: 1px solid #ccc;
+}
+
+
+
+
+
+
