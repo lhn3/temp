@@ -1,0 +1,148 @@
+@import "common";
+
+@num:50;
+
+body{
+  min-width: 320px;
+  max-width: 720px;
+  width: 15rem;
+  margin: 0 auto;
+  font-family: Arial, Helvetica;
+  background-color: #F2F2F2;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+	-webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+button{
+    /*取消端浏览器默认的外观*/
+	-webkit-appearance: none;
+}
+img,a{
+    /*禁用长按页面时的弹出菜单*/
+    -webkit-touch-callout: none;
+    /*去除图片顶部空白*/
+    vertical-align: top;
+}
+
+
+.search{
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15rem;
+  height: (88rem / @num);
+  background-color: #FFC001;
+
+  .classify{
+    z-index: 1;
+    width: (44rem / @num);
+    height: (70rem / @num);
+    font-size: (18rem / @num) ;
+    margin: (11rem / @num) (25rem / @num) (7rem / @num) (24rem / @num) ;
+    &::before{
+      display: block;
+      content: "";
+      width: (44rem / @num);
+      height: (70rem /  @num);
+      background: url("../img/classify.png") no-repeat 0 0;
+      background-size: (44rem / @num) (70rem /  @num);
+    }
+  }
+
+  .searchs{
+    flex: 1;
+
+    input{
+      height: (70rem / @num);
+      width: 100%;
+      margin: (9rem / @num) 0;
+      outline: none;
+      border: none  ;
+      border-radius: (35rem / @num);
+      background-color:#FFF2CC;
+      font-size: (25rem / @num);
+      padding-left: 1rem;
+      box-sizing: border-box;
+      color: #757575;
+    }
+  }
+
+  .login{
+    width: (75rem / @num);
+    height: (70rem / @num);
+    margin: (10rem / @num) (10rem / @num) (7rem / @num) (10rem / @num) ;
+    text-align: center;
+    line-height: (70rem / @num);
+    font-size: (25rem / @num);
+    color: #fff;
+  }
+}
+
+.banner{
+  width: (750rem / @num);
+  height:(368rem / @num);
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.ad{
+  display: flex;
+
+  a{
+    flex: 1;
+
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.nav{
+    width: (750rem / @num);
+  ul{
+
+    li{
+      float: left;
+      width: (150rem / @num);
+      height: (140rem / @num);
+      text-align: center;
+
+      a{
+        width: 100%;
+        font-size: (25rem / @num);
+        color: #0f0f0f;
+
+        &::before{
+          display: block;
+          content: "";
+          width: (82rem / @num);
+          height: (82rem / @num);
+          background: url("../upload/nav1.png") no-repeat;
+          background-size: (82rem / @num);
+          margin: (15rem / @num) (30rem / @num);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
