@@ -1,0 +1,324 @@
+body {
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    font: normal 14px/1.5 Tahoma, 'Lucida Grande', Verdana, 'Microsoft YaHei';
+    color: #000;
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    /*取消端浏览器默认的外观*/
+    -webkit-appearance: none;
+}
+
+img, a {
+    /*禁用长按页面时的弹出菜单*/
+    -webkit-touch-callout: none;
+    /*去除图片顶部空白*/
+    vertical-align: top;
+}
+
+
+.search {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 50%;
+    /*走自己宽度的一半*/
+    transform: translateX(-50%);
+    width: 100%;
+    height: 44px;
+    min-width: 320px;
+    max-width: 640px;
+    justify-content: flex-end;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.search-search {
+    position: relative;
+    flex: 1;
+    height: 26px;
+    margin: 9px 10px;
+    border-radius: 5px;
+    border: 1px solid #a5a5a5;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+    line-height: 26px;
+}
+.search-search:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    background: url("../img/sprite.png") no-repeat -59px -279px;
+    background-size: 104px;
+}
+.search-search span{
+    margin-left: 25px;
+    color: #a5a5a5;
+    font-size: 14px;
+}
+
+.user {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    font-size: 12px;
+    color: #2eaae0;
+}
+
+.user:before {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url("../img/sprite.png") no-repeat -59px -194px;
+    background-size: 104px;
+    margin: 3px auto 0;
+}
+
+
+/*焦点图*/
+.swiper{
+    margin-top: 44px;
+}
+.swiper img{
+    width: 100%;
+}
+
+/*局部导航栏*/
+.local-nav{
+    height:64px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 4px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+.local-nav ul{
+    display: flex;
+}
+.local-nav li{
+    flex: 1;
+    margin-top: 10px;
+}
+.local-nav a{
+    color: #222;
+    font-size: 12px;
+    display: flex;
+    /*主轴设置y周*/
+    flex-direction: column;
+    /*侧轴居中*/
+    align-items: center;
+}
+.local-nav li span:nth-child(1){
+    width: 32px;
+    height: 32px;
+    background: url('../img/localnav_bg.png') no-repeat 0 0;
+    background-size: 32px;
+}
+.local-nav li:nth-child(2) span:nth-child(1){
+    background-position: 0 -32px;
+}
+.local-nav li:nth-child(3) span:nth-child(1){
+    background-position: 0 -64px;
+}
+.local-nav li:nth-child(4) span:nth-child(1){
+    background-position: 0 -96px;
+}
+.local-nav li:nth-child(4) span:nth-child(1){
+    background-position: 0 -128px;
+}
+
+/*局部导航栏*/
+nav{
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 4px;
+}
+.nav-common{
+    display: flex;
+    height: 88px;
+}
+.nav-common:nth-child(2){
+    margin: 3px 0;
+}
+.nav-items{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.nav-common .nav-items:nth-child(1) a{
+    /*给a加背景*/
+    background: url("../img/hotel.png") no-repeat bottom center;
+    background-size: 121px;
+}
+.nav-items a{
+    flex: 1;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+.nav-items a:nth-child(2){
+    border-top: 1px solid white;
+}
+.nav-items:nth-child(2){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.nav-common:nth-child(1){
+    background: -webkit-linear-gradient(left,#FA5A55,#FA994D);
+}
+.nav-common:nth-child(2){
+    background: -webkit-linear-gradient(left,#4B90ED,#53BCED);
+}
+.nav-common:nth-child(3){
+    background: -webkit-linear-gradient(left,#34C2A9,#6CD559);
+}
+
+
+/*测导航栏*/
+.subnav-entry{
+    border-radius: 10px;
+    background-color: white;
+    margin: 4px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+.subnav-entry ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.subnav-entry li{
+    flex: 20%;
+}
+.subnav-entry a{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: #050505;
+    font-size: 14px;
+}
+.subnav-entry li span:nth-child(1){
+    width: 24px;
+    height: 24px;
+    background: url("../img/subnav-bg.png") no-repeat 0 0;
+    background-size: 24px;
+    margin-top: 4px;
+}
+.subnav-entry li:nth-child(2) span:nth-child(1){
+    background-position:0 -26px;
+}
+.subnav-entry li:nth-child(3) span:nth-child(1){
+    background-position:0 -54px;
+}
+.subnav-entry li:nth-child(4) span:nth-child(1){
+    background-position:0 -84px;
+}
+.subnav-entry li:nth-child(5) span:nth-child(1){
+    background-position:0 -112px;
+}
+.subnav-entry li:nth-child(6) span:nth-child(1){
+    background-position:0 -138px;
+}
+.subnav-entry li:nth-child(7) span:nth-child(1){
+    background-position:0 -166px;
+}
+.subnav-entry li:nth-child(8) span:nth-child(1){
+    background-position:0 -194px;
+}
+.subnav-entry li:nth-child(9) span:nth-child(1){
+    background-position:0 -220px;
+}
+.subnav-entry li:nth-child(10) span:nth-child(1){
+    background-position:0 -248px;
+}
+
+/*销售模块*/
+.sales{
+    margin: 0 4px;
+    background: white;
+}
+.sales-hd{
+    position: relative;
+    height: 44px;
+    border-top: 1px solid #a5a5a5;
+    border-bottom: 1px solid #a5a5a5;
+}
+.sales-hd h2{
+    font-size: 0;
+}
+.sales-hd h2::after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 79px;
+    height: 15px;
+    display: block;
+    background: url("../img/hot.png") no-repeat 0 -20px;
+    background-size: 79px;
+}
+.sales-hd a{
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    background: -webkit-linear-gradient(left,#FF506C,#FF6BC6);
+    padding: 3px 20px 3px 10px;
+    border-radius: 20px;
+    color: white;
+}
+.sales-hd a::after{
+    position: absolute;
+    top: 9px;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+
+.row{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+.row a{
+    flex: 1;
+}
+.row a img{
+    width: 100%;
+}
+.row a:nth-child(1){
+    border-right: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
