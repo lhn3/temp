@@ -1,0 +1,171 @@
+/*修改container最大宽度为1280*/
+
+@media screen and (min-width: 1280px) {
+    .container{
+        width: 1280px;
+    }
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+
+/*左边*/
+header{
+    /*padding-left: 0!important;*/
+}
+.logo{
+    background: #429ad9;
+}
+.logo img{
+    display: block;
+    margin: auto;
+    height: 100%;
+}
+.logo h4{
+    margin: 0;
+    padding: 0;
+    color: #F2F2F2;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+.nav{
+    background: #eee;
+    border-bottom: 1px solid #ccc;
+}
+.nav a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: #666;
+    font-size: 16px;
+    border-bottom: 1px solid #b0b0b0;
+}
+.nav a::before{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 40px;
+}
+.nav a:hover{
+    color: #333;
+    background: white;
+    text-decoration: none;
+}
+.nav a:checked{
+    text-decoration: underline;
+    color: white;
+}
+
+@media screen and (max-width: 991px){
+    .nav li{
+        float: left;
+        width: 20%;
+    }
+    article{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .nav li{
+        float: left;
+        width: 20%;
+    }
+    .nav a{
+        font-size: 14px;
+    }
+    .nav a::before{
+        margin: 0 5px 0 20px;
+    }
+    .news li{
+        width: 50%!important;
+    }
+    .news li:nth-child(1){
+        width: 100%!important;
+    }
+}
+
+
+/*中间*/
+.news li{
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+.news li:nth-child(1){
+    width: 50%;
+    height: 266px;
+}
+.news img{
+    width: 100%;
+    height: 100%;
+}
+.news span{
+    color: #F2F2F2;
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 12px;
+    padding: 5px 10px;
+}
+.news li:nth-child(1) span{
+    font-size: 22px;
+}
+
+
+.publish .row{
+    padding: 10px 0;
+    border-top: 1px solid #b0b0b0;
+}
+.publish img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+/*右边*/
+aside img{
+    width: 100%;
+}
+
+.hot{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+.hot h4{
+    margin: 65px 20px 10px;
+}
+.hot span{
+    top: -5px;
+    left: 30px;
+    border-radius: 0;
+    position: absolute;
+}
+.hot p{
+    margin: 0 20px 30px;
+    font-size: 12px;
+}
+.hot:hover{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
